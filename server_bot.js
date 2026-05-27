@@ -28,7 +28,7 @@ function createBot() {
     })
 
     bot.on('error', (err) => {
-        console.log('Xato bor!:', err.message)
+        console.log('Xato bor:', err.message)
     })
 
     bot.on('end', () => {
