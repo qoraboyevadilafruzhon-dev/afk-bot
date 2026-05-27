@@ -32,8 +32,8 @@ function createBot() {
     })
 
     bot.on('end', () => {
-        console.log('Qayta urinyapti (5sek)...')
-        setTimeout(createBot, 5000)
+        console.log('Qayta urinyapti (15sek)...')
+        setTimeout(createBot, 15000)
     })
 }
 createBot()
