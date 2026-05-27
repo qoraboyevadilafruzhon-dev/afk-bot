@@ -18,7 +18,12 @@ function createBot() {
         username: 'AFK_Bot_Uz'        
     })
 
-    bot.on('login', () => {
+    bot.on('login', () => {bot.on('chat', (username, message) => {
+  // Server chatida login talab qiladigan xabarni kutamiz
+  if (message.includes('login') || message.includes('register') || message.includes('Password')) {
+    bot.chat('/login 098098'); //
+  }
+});
         console.log('Bot serverga daxshat bolib kirdi!')
     })
 
